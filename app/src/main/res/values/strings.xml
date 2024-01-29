@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">REST-Client-Demos</string>
+
+    <string name="button_zeit_abfragen"   >Zeit abfragen</string>
+    <string name="button_zufallspersonen" >Zufallspersonen</string>
+    <string name="button_bild_holen"      >Bild holen</string>
+
+</resources>
