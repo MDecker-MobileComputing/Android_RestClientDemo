@@ -18,6 +18,6 @@
     <string name="kurzanleitung_zufallsnamen">Drücken Sie auf den Button unten, um über einen Web-API-Request
                                   drei zufällig erzeugte Personen-Namen von <i>http://randomuser.me</i>
                                   abzurufen.</string>
-    <string name="button_zufallsnamen_start">Zufalls-Personen abrufen</string>
+    <string name="button_zufallsnamen_start">Zufallspersonen abrufen</string>
 
 </resources>

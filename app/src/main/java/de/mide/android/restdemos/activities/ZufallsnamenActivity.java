@@ -5,7 +5,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -272,7 +271,7 @@ public class ZufallsnamenActivity extends AppCompatActivity {
 
                 String ergString = parseJSON(jsonDocument);
 
-                ergbnisDarstellen( "Ergebnis von Web-Request:\n\n" + ergString );
+                ergbnisDarstellen( ergString );
             }
             catch (Exception ex) {
 
