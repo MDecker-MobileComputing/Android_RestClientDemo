@@ -7,6 +7,10 @@
     <string name="button_zufallspersonen_holen">\nZufallspersonen holen\n</string>
     <string name="button_bild_holen">\nBild holen\n</string>
 
+    <!-- Texte für Activity zur Abfrage von Datum+Zeit -->
     <string name="activity_titel_datumzeit">Datum und Zeit</string>
+    <string name="kurzanleitung">Drücken Sie auf den Button unten, um über einen Web-API-Request
+                                 Datum &amp; Uhrzeit abzurufen.</string>
+    <string name="button_zeitdatum_start">Datum &amp; Uhrzeit abrufen</string>
 
 </resources>
