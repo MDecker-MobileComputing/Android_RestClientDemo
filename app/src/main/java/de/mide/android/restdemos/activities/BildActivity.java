@@ -70,7 +70,7 @@ public class BildActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(R.string.activity_titel_bild);
-        
+
         _bildNummerEditText = findViewById( R.id.editTextBildNummer    );
         _imageView          = findViewById( R.id.imageViewElement      );
         _startButton        = findViewById( R.id.holeBildButton        );
