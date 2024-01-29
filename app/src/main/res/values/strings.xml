@@ -4,13 +4,20 @@
 
     <!-- Buttons für Hauptmenü (mit \n am Anfang+Ende, damit extra breit -->
     <string name="button_zeit_holen">\nDatum+Zeit holen\n</string>
-    <string name="button_zufallspersonen_holen">\nZufallspersonen holen\n</string>
+    <string name="button_zufallspersonen_holen">\nZufällige Namen holen\n</string>
     <string name="button_bild_holen">\nBild holen\n</string>
 
     <!-- Texte für Activity zur Abfrage von Datum+Zeit -->
     <string name="activity_titel_datumzeit">Datum und Zeit</string>
-    <string name="kurzanleitung">Drücken Sie auf den Button unten, um über einen Web-API-Request
-                                 Datum &amp; Uhrzeit abzurufen.</string>
+    <string name="kurzanleitung_datumzeit">Drücken Sie auf den Button unten, um über einen Web-API-Request
+                                           Datum &amp; Uhrzeit abzurufen.</string>
     <string name="button_zeitdatum_start">Datum &amp; Uhrzeit abrufen</string>
+
+    <!-- Texte für Activity zur Abfrage von Zufallsnamen -->
+    <string name="activity_titel_zufallsnamen">Zufallsnamen</string>
+    <string name="kurzanleitung_zufallsnamen">Drücken Sie auf den Button unten, um über einen Web-API-Request
+                                  drei zufällig erzeugte Personen-Namen von <i>http://randomuser.me</i>
+                                  abzurufen.</string>
+    <string name="button_zufallsnamen_start">Zufalls-Personen abrufen</string>
 
 </resources>

@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import de.mide.android.restdemos.datumzeit.DatumUndZeitActivity;
+import de.mide.android.restdemos.activities.DatumUndZeitActivity;
+import de.mide.android.restdemos.activities.ZufallsnamenActivity;
 
 /**
  * Activity mit Hauptmenü der App.
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onZufallspersonenHolen(View view) {
 
+        Intent intent = new Intent(this, ZufallsnamenActivity.class);
+        startActivity(intent);
     }
 
     public void onBildHolen(View view) {

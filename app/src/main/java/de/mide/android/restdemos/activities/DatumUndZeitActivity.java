@@ -1,4 +1,4 @@
-package de.mide.android.restdemos.datumzeit;
+package de.mide.android.restdemos.activities;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -51,8 +51,8 @@ public class DatumUndZeitActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(R.string.activity_titel_datumzeit);
 
-        _startButton      = findViewById( R.id.starteWebRequestButton );
-        _ergebnisTextView = findViewById( R.id.ergebnisTextView       );
+        _startButton      = findViewById( R.id.starteDatumZeitRequestButton );
+        _ergebnisTextView = findViewById( R.id.datumZeitTextView            );
 
         // vertikales Scrolling ermöglichen
         _ergebnisTextView.setMovementMethod( new ScrollingMovementMethod() );

@@ -1,32 +1,36 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-
-    <TextView android:id="@+id/ergebnisTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+    <TextView
+        android:id="@+id/datumZeitTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_margin="10dp"
         android:background="#F0F0F0"
-        android:textSize="20sp"
-        android:layout_above="@+id/starteWebRequestButton"
         android:maxLines="200"
         android:scrollbars="vertical"
-        android:text="@string/kurzanleitung" />
-
-
-    <Button android:id="@id/starteWebRequestButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:text="@string/kurzanleitung_datumzeit"
         android:textSize="20sp"
-        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toTopOf="@+id/starteDatumZeitRequestButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/starteDatumZeitRequestButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:onClick="onStartButtonBetaetigt"
-        android:text="@string/button_zeitdatum_start" />
+        android:text="@string/button_zeitdatum_start"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
