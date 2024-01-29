@@ -20,4 +20,11 @@
                                   abzurufen.</string>
     <string name="button_zufallsnamen_start">Zufallspersonen abrufen</string>
 
+    <!-- Texte für Activity zum Laden von Bildern -->
+    <string name="activity_titel_bild">Bild von REST-API laden</string>
+    <string name="bild_nr_label">Bild-Nr:</string>
+    <string name="button_bild_start">Bild abrufen</string>
+    <string name="button_zufallsbild">Zufallsbild</string>
+    <string name="image_view_beschreibung">Hier wird das von der Web-API geladene Bild angezeigt.</string>
+
 </resources>

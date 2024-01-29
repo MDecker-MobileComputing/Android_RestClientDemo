@@ -34,6 +34,10 @@
             android:name=".activities.ZufallsnamenActivity"
             android:exported="false" />
 
+        <activity
+            android:name="de.mide.android.restdemos.activities.BildActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

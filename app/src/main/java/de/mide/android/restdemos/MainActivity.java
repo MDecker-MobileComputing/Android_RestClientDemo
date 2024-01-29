@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import de.mide.android.restdemos.activities.BildActivity;
 import de.mide.android.restdemos.activities.DatumUndZeitActivity;
 import de.mide.android.restdemos.activities.ZufallsnamenActivity;
 
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBildHolen(View view) {
 
+        Intent intent = new Intent(this, BildActivity.class);
+        startActivity(intent);
     }
 
 }
