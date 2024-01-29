@@ -11,14 +11,47 @@
         android:id="@+id/zeitAbfrageButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/button_zeit_abfragen"
-        android:onClick="onButtonHandyAufladenClick"
+        android:text="@string/button_zeit_holen"
+        android:onClick="onButtonDatumUndZeitHolen"
         android:layout_marginTop="16dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_chainStyle="spread"
         app:layout_constraintTop_toTopOf="parent"
-         />
+        app:layout_constraintBottom_toTopOf="@id/zufallsPersonenButton" />
+
+    <Button
+        android:id="@+id/zufallsPersonenButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_zufallspersonen_holen"
+        android:onClick="onZufallspersonenHolen"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@+id/zeitAbfrageButton"
+        app:layout_constraintBottom_toTopOf="@id/bildHolenButton"/>
+
+    <Button
+        android:id="@+id/bildHolenButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_bild_holen"
+        android:onClick="onBildHolen"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@+id/zufallsPersonenButton"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!--
+          Gleichmäßges Verteilen der Buttons über die vertikale Achse:
+          * Jeder Button hat das Attribut app:layout_constraintVertical_chainStyle="spread"
+          * Der erste Button hat das Attribut app:layout_constraintTop_toTopOf="parent"
+          * Der letzte Button hat das Attribut app:layout_constraintBottom_toBottomOf="parent"
+     -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

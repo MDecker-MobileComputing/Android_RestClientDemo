@@ -2,8 +2,11 @@
 
     <string name="app_name">REST-Client-Demos</string>
 
-    <string name="button_zeit_abfragen"   >Zeit abfragen</string>
-    <string name="button_zufallspersonen" >Zufallspersonen</string>
-    <string name="button_bild_holen"      >Bild holen</string>
+    <!-- Buttons für Hauptmenü (mit \n am Anfang+Ende, damit extra breit -->
+    <string name="button_zeit_holen">\nDatum+Zeit holen\n</string>
+    <string name="button_zufallspersonen_holen">\nZufallspersonen holen\n</string>
+    <string name="button_bild_holen">\nBild holen\n</string>
+
+    <string name="activity_titel_datumzeit">Datum und Zeit</string>
 
 </resources>

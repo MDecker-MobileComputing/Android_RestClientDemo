@@ -6,10 +6,6 @@
     <!-- Berechtigung für Internet-Zugriff deklarieren -->
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!--
-        Attribut android:usesCleartextTraffic="true" setzen, weil die Web-API nicht über httpS
-        erreichbar ist.
-    -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,7 +13,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.RESTClientDemos"
         tools:targetApi="31">
@@ -30,6 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".datumzeit.DatumUndZeitActivity"
+            android:exported="false" />
 
     </application>
 
