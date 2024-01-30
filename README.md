@@ -18,6 +18,22 @@ Die in der Spalte "Separate App" verlinkten Android-Apps werden nicht mehr weite
 
 ----
 
+## Screenshots ##
+
+<br>
+
+![Hauptmenü](screenshot_1.png)
+
+![Datum+Zeit holen (1)](screenshot_2a.png) &nbsp; ![Datum+Zeit holen (2)](screenshot_2b.png)
+
+![Zufallsnamen holen (1)](screenshot_3a.png) &nbsp; ![Zufallsnamen holen (2)](screenshot_3b.png)
+
+![Zufallsfoto holen](screenshot_4.png)
+
+<br>
+
+----
+
 ## License ##
 
 <br>
