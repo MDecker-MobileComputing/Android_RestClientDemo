@@ -1,63 +1,63 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FFFFFF">
 
     <TextView android:id="@+id/bildNrTextview"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/holeBildButton"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="5sp"
-        android:paddingLeft="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextBildNummer"
+        app:layout_constraintHorizontal_weight="2"
         android:text="@string/bild_nr_label"
         android:gravity="center_vertical"
         android:textSize="20sp" />
 
     <EditText android:id="@+id/editTextBildNummer"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/bildNrTextview"
-        android:layout_marginRight="10sp"
-        android:layout_marginTop="5sp"
+        app:layout_constraintTop_toTopOf="@+id/bildNrTextview"
+        app:layout_constraintStart_toEndOf="@+id/bildNrTextview"
+        app:layout_constraintEnd_toStartOf="@+id/holeBildButton"
+        app:layout_constraintHorizontal_weight="1"
+        android:gravity="center"
         android:textSize="20sp"
-        android:gravity="center_vertical"
         android:maxLength="2"
         android:inputType="number" />
 
     <Button android:id="@+id/holeBildButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/editTextBildNummer"
-        android:layout_marginTop="5dp"
-        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextBildNummer"
+        app:layout_constraintEnd_toStartOf="@+id/holeZufallsBildButton"
+        app:layout_constraintHorizontal_weight="3"
         android:text="@string/button_bild_start"
         android:onClick="onStartButtonBetaetigt" />
 
     <Button android:id="@+id/holeZufallsBildButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/holeBildButton"
-        android:layout_marginTop="5dp"
-        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/holeBildButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="3"
         android:text="@string/button_zufallsbild"
         android:onClick="onStartButtonZufall" />
 
-
     <ImageView android:id="@+id/imageViewElement"
         android:contentDescription="@string/image_view_beschreibung"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/holeBildButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:background="#C0C0C0"
         android:layout_below="@id/bildNrTextview"  />
 
-
-    <!-- Progress-Bar in in die Mitte der Activity setzen (ist nur während des Ladens sichtbar). -->
-    <ProgressBar android:id="@+id/ladeProgressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

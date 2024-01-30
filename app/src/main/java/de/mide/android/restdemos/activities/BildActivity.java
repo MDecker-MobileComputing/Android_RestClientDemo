@@ -75,7 +75,7 @@ public class BildActivity extends AppCompatActivity {
         _imageView          = findViewById( R.id.imageViewElement      );
         _startButton        = findViewById( R.id.holeBildButton        );
         _startButtonZufall  = findViewById( R.id.holeZufallsBildButton );
-        _progressBar        = findViewById( R.id.ladeProgressBar       );
+        //_progressBar        = findViewById( R.id.ladeProgressBar       );
 
         //_progressBar.setVisibility(View.INVISIBLE); // Unsichtbar, wird aber für Layout berücksichtigt
         buttonsEinschalten(true);
@@ -279,6 +279,7 @@ public class BildActivity extends AppCompatActivity {
                 _startButton.setEnabled      (buttonsAktivFinal);
                 _startButtonZufall.setEnabled(buttonsAktivFinal);
 
+                /*
                 if (buttonsAktivFinal) {
 
                     _progressBar.setVisibility(View.INVISIBLE);
@@ -288,6 +289,7 @@ public class BildActivity extends AppCompatActivity {
 
                     _progressBar.setVisibility(View.VISIBLE);
                 }
+                */
             }
         });
     }
