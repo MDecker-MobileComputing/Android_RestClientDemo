@@ -14,7 +14,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editTextBildNummer"
         app:layout_constraintHorizontal_weight="2"
-        android:gravity="center_vertical"
         android:text="@string/bild_nr_label"
         android:textSize="20sp" />
 
@@ -24,6 +23,7 @@
         app:layout_constraintTop_toTopOf="@+id/bildNrTextview"
         app:layout_constraintStart_toEndOf="@+id/bildNrTextview"
         app:layout_constraintEnd_toStartOf="@+id/holeBildButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bildNrTextview"
         app:layout_constraintHorizontal_weight="1"
         android:gravity="center_horizontal"
         android:textSize="20sp"
