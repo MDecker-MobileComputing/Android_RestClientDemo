@@ -15,7 +15,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
@@ -53,9 +52,6 @@ public class BildActivity extends AppCompatActivity {
     /** Nummer für das zu holende Bild, von 0 bis 99, wird vom Nutzer eingegeben. */
     protected int _bildNummer = -1;
 
-    /** UI-Element zur Fortschritts-Anzeige während des Lade-Vorgangs. */
-    protected ProgressBar _progressBar = null;
-
     /** Zufalls-Generator für Bild-Nummer. */
     protected Random _random = null;
 
@@ -75,9 +71,7 @@ public class BildActivity extends AppCompatActivity {
         _imageView          = findViewById( R.id.imageViewElement      );
         _startButton        = findViewById( R.id.holeBildButton        );
         _startButtonZufall  = findViewById( R.id.holeZufallsBildButton );
-        //_progressBar        = findViewById( R.id.ladeProgressBar       );
 
-        //_progressBar.setVisibility(View.INVISIBLE); // Unsichtbar, wird aber für Layout berücksichtigt
         buttonsEinschalten(true);
 
         setzeZufallsBildNr();
@@ -278,18 +272,6 @@ public class BildActivity extends AppCompatActivity {
 
                 _startButton.setEnabled      (buttonsAktivFinal);
                 _startButtonZufall.setEnabled(buttonsAktivFinal);
-
-                /*
-                if (buttonsAktivFinal) {
-
-                    _progressBar.setVisibility(View.INVISIBLE);
-                    // unsichtbar, aber Platz wird für Layout berücksichtigt
-
-                } else {
-
-                    _progressBar.setVisibility(View.VISIBLE);
-                }
-                */
             }
         });
     }
@@ -349,7 +331,5 @@ public class BildActivity extends AppCompatActivity {
     /* *************************** */
     /* *** Ende innere Klasse  *** */
     /* *************************** */
-
-
 
 }
