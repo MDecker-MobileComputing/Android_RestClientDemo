@@ -7,14 +7,15 @@
     android:background="#FFFFFF">
 
     <TextView android:id="@+id/bildNrTextview"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editTextBildNummer"
+        app:layout_constraintBottom_toBottomOf="@id/editTextBildNummer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editTextBildNummer"
         app:layout_constraintHorizontal_weight="2"
-        android:text="@string/bild_nr_label"
         android:gravity="center_vertical"
+        android:text="@string/bild_nr_label"
         android:textSize="20sp" />
 
     <EditText android:id="@+id/editTextBildNummer"
@@ -24,7 +25,7 @@
         app:layout_constraintStart_toEndOf="@+id/bildNrTextview"
         app:layout_constraintEnd_toStartOf="@+id/holeBildButton"
         app:layout_constraintHorizontal_weight="1"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:textSize="20sp"
         android:maxLength="2"
         android:inputType="number" />
@@ -37,6 +38,7 @@
         app:layout_constraintEnd_toStartOf="@+id/holeZufallsBildButton"
         app:layout_constraintHorizontal_weight="3"
         android:text="@string/button_bild_start"
+        android:textSize="15sp"
         android:onClick="onStartButtonBetaetigt" />
 
     <Button android:id="@+id/holeZufallsBildButton"
@@ -47,6 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="3"
         android:text="@string/button_zufallsbild"
+        android:textSize="15sp"
         android:onClick="onStartButtonZufall" />
 
     <ImageView android:id="@+id/imageViewElement"
