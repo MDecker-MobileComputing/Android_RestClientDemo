@@ -191,10 +191,8 @@ public class BildActivity extends AppCompatActivity {
         }
 
 
-        // URL erzeugen
-        final URL url = new URL("https://api.randomuser.me/portraits/men/" + _bildNummer + ".jpg");
-        Log.i(TAG4LOGGING, "URL: " + url);
-
+        final URL url = new URL( "https://api.randomuser.me/portraits/men/" + _bildNummer + ".jpg" );
+        Log.i( TAG4LOGGING, "URL: " + url );
 
         final HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 
