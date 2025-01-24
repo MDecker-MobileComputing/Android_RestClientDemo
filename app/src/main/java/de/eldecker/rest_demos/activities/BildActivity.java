@@ -67,7 +67,7 @@ public class BildActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState     );
         setContentView( R.layout.activity_bild );
 
-        ActionBar actionBar = getSupportActionBar();
+        final ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(R.string.activity_titel_bild);
 
         _bildNummerEditText = findViewById( R.id.editTextBildNummer    );
@@ -104,7 +104,7 @@ public class BildActivity extends AppCompatActivity {
             _random = new Random();
         }
 
-        int zufallsZahl = _random.nextInt(100); // Zahl 0..99
+        final int zufallsZahl = _random.nextInt(100); // Zahl 0..99
 
         _bildNummerEditText.setText(zufallsZahl + "");
     }
@@ -122,7 +122,7 @@ public class BildActivity extends AppCompatActivity {
      */
     public void onStartButtonBetaetigt(View view) {
 
-        String bildNummerAlsStr = _bildNummerEditText.getText().toString();
+        final String bildNummerAlsStr = _bildNummerEditText.getText().toString();
 
         // Prüfen, ob überhaupt eine Bild-Nummer eingegeben wurde
         if (bildNummerAlsStr.length() == 0) {
@@ -154,7 +154,7 @@ public class BildActivity extends AppCompatActivity {
 
 
         // Hintergrund-Thread mit HTTP-Request starten
-        MeinHintergrundThread mht = new MeinHintergrundThread();
+        final MeinHintergrundThread mht = new MeinHintergrundThread();
         mht.start();
     }
 
@@ -192,11 +192,11 @@ public class BildActivity extends AppCompatActivity {
 
 
         // URL erzeugen
-        URL url = new URL("https://api.randomuser.me/portraits/men/" + _bildNummer + ".jpg");
+        final URL url = new URL("https://api.randomuser.me/portraits/men/" + _bildNummer + ".jpg");
         Log.i(TAG4LOGGING, "URL: " + url);
 
 
-        HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+        final HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 
         Log.i(TAG4LOGGING, "Response Code von HTTP-Request: " + urlConnection.getResponseCode() +
                 " - " + urlConnection.getResponseMessage() );
@@ -300,7 +300,7 @@ public class BildActivity extends AppCompatActivity {
 
             try {
 
-                InputStream is = holeDatenVonWebAPI();
+                final InputStream is = holeDatenVonWebAPI();
 
                 if (is == null) {
 
