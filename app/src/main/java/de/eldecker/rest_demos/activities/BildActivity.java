@@ -57,6 +57,7 @@ public class BildActivity extends AppCompatActivity {
     /** Zufalls-Generator für Bild-Nummer. */
     protected Random _random = null;
 
+
     /**
      * Lifecycle-Methode: Laden der Layout-Datei, holen der Referenzen auf die UI-Elemente.
      */
@@ -250,6 +251,7 @@ public class BildActivity extends AppCompatActivity {
         }
     }
 
+
     /**
      * Mit dieser Methode können unmittelbar vor dem Lade-Vorgang
      * die Buttons deaktiviert werden. In dieser Methode
@@ -306,7 +308,6 @@ public class BildActivity extends AppCompatActivity {
                 }
 
                 bildDarstellen(is);
-
             }
             catch (Exception ex) {
 
@@ -327,7 +328,6 @@ public class BildActivity extends AppCompatActivity {
                 });
             }
         }
-
     };
 
     /* *************************** */
