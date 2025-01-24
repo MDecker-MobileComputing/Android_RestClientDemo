@@ -23,6 +23,7 @@ import java.net.URL;
 
 import de.mide.android.restdemos.R;
 
+
 /**
  * Activity, um Datum+Uhrzeit von REST-API abzufragen.
  */
@@ -38,6 +39,7 @@ public class DatumUndZeitActivity extends AppCompatActivity {
      * auch zur Anzeige von Fehlermeldungen.
      */
     protected TextView _ergebnisTextView = null;
+
 
     /**
      * Lifecycle-Methode: Layout für UI laden und Referenzen auf UI-Elemente holen.
@@ -76,6 +78,7 @@ public class DatumUndZeitActivity extends AppCompatActivity {
         MeinHintergrundThread mht = new MeinHintergrundThread();
         mht.start();
     }
+
 
     /**
      * In dieser Methode wird der HTTP-Request zur Web-API durchgeführt.
@@ -125,6 +128,15 @@ public class DatumUndZeitActivity extends AppCompatActivity {
         return httpErgebnisDokument;
     }
 
+    /**
+     * Zeit und Datum aus JSON-String extrahieren und als String zurückliefern.
+     *
+     * @param jsonString JSON-String, der von Web-API zurückgeliefert wurde.
+     *
+     * @return String mit Datum und Uhrzeit, z.B. "Zeit: 12:34:56\n\nDatum: 2021-12-31".
+     *
+     * @throws JSONException Wenn JSON-String nicht geparst werden kann.
+     */
     protected String parseJSON(String jsonString) throws JSONException {
 
         if (jsonString == null || jsonString.trim().length() == 0) {
@@ -191,6 +203,7 @@ public class DatumUndZeitActivity extends AppCompatActivity {
             final String finalString = ergebnisStr;
 
             _startButton.post( new Runnable() { // wir könnten auch die post()-Methode des TextView-Elements verwenden
+
                 @Override
                 public void run() {
 
@@ -206,6 +219,5 @@ public class DatumUndZeitActivity extends AppCompatActivity {
     /* *************************** */
     /* *** Ende innere Klasse  *** */
     /* *************************** */
-
 
 }

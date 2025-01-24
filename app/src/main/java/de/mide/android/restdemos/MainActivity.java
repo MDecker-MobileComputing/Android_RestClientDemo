@@ -10,6 +10,7 @@ import de.mide.android.restdemos.activities.BildActivity;
 import de.mide.android.restdemos.activities.DatumUndZeitActivity;
 import de.mide.android.restdemos.activities.ZufallsnamenActivity;
 
+
 /**
  * Activity mit Hauptmenü der App.
  */

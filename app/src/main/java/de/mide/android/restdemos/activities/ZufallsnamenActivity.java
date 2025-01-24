@@ -22,6 +22,7 @@ import java.net.URL;
 
 import de.mide.android.restdemos.R;
 
+
 /**
  * App ruft von einer Web-API zufällige Personen-Namen im JSON-Format ab.
  * Verwendete Web-API: <a href="https://randomuser.me">https://randomuser.me</a> .
