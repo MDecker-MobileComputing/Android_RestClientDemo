@@ -6,7 +6,7 @@ Dieses Repo enthält eine native Android-App mit Java, mit der Daten von drei RE
 
 | Daten | REST-API | Separate App (GitHub-Repo) |
 | -- | -- | -- |
-| Datum & Uhrzeit | [el-decker.de/rest/](https://el-decker.de/rest/DatumUndZeit.php) | [Link](https://github.com/MDecker-MobileComputing/Android_DatumUndZeitVonWebAPI) |
+| Datum & Uhrzeit | [api.el-decker.de](https://api.el-decker.de/DatumUndZeit.php) | [Link](https://github.com/MDecker-MobileComputing/Android_DatumUndZeitVonWebAPI) |
 | Zufallsnamen (Vor- und Nachname) | [randomuser.me](https://randomuser.me/) | [Link](https://github.com/MDecker-MobileComputing/Android_ZufallsnamenVonWebAPI) |
 | Bild (Foto von Person) | [randomuser.me/photos](https://randomuser.me/photos) | [Link](https://github.com/MDecker-MobileComputing/Android_ZufallsbilderVonWebAPI) |
 
