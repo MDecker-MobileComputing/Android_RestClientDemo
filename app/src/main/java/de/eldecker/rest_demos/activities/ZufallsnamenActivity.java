@@ -1,4 +1,4 @@
-package de.mide.android.restdemos.activities;
+package de.eldecker.rest_demos.activities;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,7 +20,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import de.mide.android.restdemos.R;
+import de.eldecker.rest_demos.R;
 
 
 /**

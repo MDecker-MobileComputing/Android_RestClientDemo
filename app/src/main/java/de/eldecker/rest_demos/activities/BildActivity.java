@@ -1,4 +1,4 @@
-package de.mide.android.restdemos.activities;
+package de.eldecker.rest_demos.activities;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -20,7 +20,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import de.mide.android.restdemos.R;
+import de.eldecker.rest_demos.R;
 
 
 /**

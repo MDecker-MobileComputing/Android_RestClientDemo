@@ -1,4 +1,4 @@
-package de.mide.android.restdemos.activities;
+package de.eldecker.rest_demos.activities;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import de.mide.android.restdemos.R;
+import de.eldecker.rest_demos.R;
 
 
 /**
@@ -100,7 +100,7 @@ public class DatumUndZeitActivity extends AppCompatActivity {
 
         // eigene Implementierung von http://www.jsontest.com/#date (weil http://time.jsontest.com kein httpS unterstützt)
         // Beispiel für Antwort: https://gist.github.com/MDecker-MobileComputing/369b9b6574edab68cd4dcfaf8d42e47b
-        url  = new URL("https://el-decker.de/rest/DatumUndZeit.php");
+        url  = new URL("https://api.el-decker.de/DatumUndZeit.php");
         conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET"); // Eigentlich nicht nötig, weil "GET" Default-Wert ist.
 
@@ -127,6 +127,7 @@ public class DatumUndZeitActivity extends AppCompatActivity {
 
         return httpErgebnisDokument;
     }
+
 
     /**
      * Zeit und Datum aus JSON-String extrahieren und als String zurückliefern.
@@ -211,7 +212,6 @@ public class DatumUndZeitActivity extends AppCompatActivity {
                     _ergebnisTextView.setText(finalString);
                 }
             });
-
         }
 
     };

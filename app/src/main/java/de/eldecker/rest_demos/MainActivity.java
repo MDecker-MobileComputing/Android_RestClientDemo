@@ -1,14 +1,15 @@
-package de.mide.android.restdemos;
+package de.eldecker.rest_demos;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 
-import de.mide.android.restdemos.activities.BildActivity;
-import de.mide.android.restdemos.activities.DatumUndZeitActivity;
-import de.mide.android.restdemos.activities.ZufallsnamenActivity;
+import de.eldecker.rest_demos.activities.BildActivity;
+import de.eldecker.rest_demos.activities.DatumUndZeitActivity;
+import de.eldecker.rest_demos.activities.ZufallsnamenActivity;
 
 
 /**
@@ -23,17 +24,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
     public void onButtonDatumUndZeitHolen(View view) {
 
         Intent intent = new Intent(this, DatumUndZeitActivity.class);
         startActivity(intent);
     }
 
+
     public void onZufallspersonenHolen(View view) {
 
         Intent intent = new Intent(this, ZufallsnamenActivity.class);
         startActivity(intent);
     }
+
 
     public void onBildHolen(View view) {
 

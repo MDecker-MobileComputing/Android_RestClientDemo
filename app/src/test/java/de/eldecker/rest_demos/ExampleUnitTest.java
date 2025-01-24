@@ -1,4 +1,4 @@
-package de.mide.android.restdemos;
+package de.eldecker.rest_demos;
 
 import org.junit.Test;
 
