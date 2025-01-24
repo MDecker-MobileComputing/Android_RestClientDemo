@@ -1,5 +1,7 @@
 package de.eldecker.rest_demos.activities;
 
+import static java.lang.Integer.parseInt;
+
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -134,7 +136,7 @@ public class BildActivity extends AppCompatActivity {
         // Bild-Nummer in int-Zahl umwandeln
         try {
 
-            _bildNummer = Integer.parseInt(bildNummerAlsStr);
+            _bildNummer = parseInt(bildNummerAlsStr);
         }
         catch (Exception ex) {
 
