@@ -51,7 +51,10 @@ public class ZufallsnamenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_zufallsnamen);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(R.string.activity_titel_zufallsnamen);
+        if ( actionBar != null ) {
+
+            actionBar.setTitle(R.string.activity_titel_zufallsnamen);
+        }
 
         _startButton      = findViewById( R.id.starteZufallsnamenRequestButton );
         _ergebnisTextView = findViewById( R.id.zufallsnamenTextView            );
@@ -142,7 +145,7 @@ public class ZufallsnamenActivity extends AppCompatActivity {
      */
     protected String parseJSON(String jsonString) throws JSONException {
 
-        if (jsonString == null || jsonString.trim().length() == 0) {
+        if (jsonString == null || jsonString.trim().isEmpty()) {
 
             return "Leeres JSON-Objekt von Web-API erhalten.";
         }
@@ -232,7 +235,7 @@ public class ZufallsnamenActivity extends AppCompatActivity {
 
         name = name.trim(); // Leerzeichen am Anfange & Ende entfernen
 
-        if (name.length() == 0) {
+        if (name.isEmpty()) {
 
             return "";
         }
@@ -252,10 +255,10 @@ public class ZufallsnamenActivity extends AppCompatActivity {
      */
     protected class MeinHintergrundThread extends Thread {
 
-        /** Konstruktor für "Self-Starting Thread". */
         /*
         protected MeinHintergrundThread() {
-            start();
+
+            start(); // self-starting Thread
         }
         */
 
